@@ -47,4 +47,8 @@ function startQuiz() {
     currentQuestion++;
     displayQuestion();
   }
-    
+  function saveScore() {
+    const initials = document.getElementById("initials").value;
+    localStorage.setItem(initials, score);
+    alert("Score saved!");
+  }
